@@ -26,9 +26,9 @@ async def on_member_update(before, after):
                 embed = discord.Embed(
                     description=f"### Welcome to Vibe Chemistry {after.mention}✌️\n\n" 
                                "💌 Your in-game invitation has been sent!\n\n"
+                               "🎨 Pick your own colour: <#1393469201225613382>\n\n"
                                "📌 Overview of all server channels and key posts: <#1412651833574559774>\n\n"
                                "🔰 If you're new to GW2, check out: <#1300774903003480175>\n\n"
-                               "🎨 Pick your own colour: <#1393469201225613382>\n\n"
                                "⛩️ Everything about the guild potions and synthesizers: [Guild Hall](https://discord.com/channels/1170458558484201543/1394218637778354249)\n\n"
                                "🛡️ Useful builds for every game mode: [GW2 Builds](https://discord.com/channels/1170458558484201543/1360871848258048175)\n\n"
                                "📅 GW2 dailies are posted here: <#1204824236175138917>\n\n"
@@ -44,3 +44,4 @@ if __name__ == "__main__":
 
 
     bot.run(os.getenv("DISCORD_TOKEN"))
+
