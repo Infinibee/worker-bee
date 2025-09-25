@@ -39,11 +39,16 @@ async def on_member_update(before, after):
                 embed.set_thumbnail(url=after.avatar.url if after.avatar else after.default_avatar.url)
                 await channel.send(embed=embed)
 
+@bot.command()
+async def ping(ctx):
+    await ctx.send("Pong!")
+
 if __name__ == "__main__":
     keep_alive()
 
 
     bot.run(os.getenv("DISCORD_TOKEN"))
+
 
 
 
